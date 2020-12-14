@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "Proyecto-Integracion-Bootstrap"
+  "defaultProject": "Proyecto-Integracion-Bootstrap",
+  "cli": {
+    "analytics": "40ab61d5-ac5a-4666-946d-3713b2b6de5b"
+  }
 }
