@@ -7,7 +7,7 @@ import { HomeComponent } from './components/home/home.component';
 import { ProductoComponent } from './components/producto/producto.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
 import { HeaderComponent } from './components/header/header.component';
-import { FooterComponent } from './footer/footer.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
