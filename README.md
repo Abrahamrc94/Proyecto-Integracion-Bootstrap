@@ -1,27 +1,53 @@
-# ProyectoIntegracionBootstrap
+## Comenzando 🚀
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.4.
+_Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
 
-## Development server
+### Pre-requisitos 📋
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+_Todo lo que necesitas para este proyecto:_
 
-## Code scaffolding
+- Spring - Spring Tool Suite 4 --> [Instalacion](https://spring.io/tools)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- TypeScript --> [Instalacion](typescriptlang.org/download)
 
-## Build
+    ```
+    npm install -g typescript
+    ```
+  
+- Angular --> [Instalacion](https://angular.io/guide/setup-local)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+- Visual Studio Code --> [Descarga](https://code.visualstudio.com/download)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Docker --> [Instalacion](https://www.docker.com/get-started)
 
-## Running end-to-end tests
+### Instalación 🔧
+_La parte de front no requiere más instalación que simplemente clonar este repositorio. Una vez en local deberás tener en cuenta que deberás ejecutar el comando **ng install** en la carpeta de destino_
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Funcionamiento del Front 
+
+_El front se compone de un home básico con un slider u varios enlaces, uno a la página de Contacto y otro a la página de Producto_
+
+
+### Backend de la aplicación
+
+[BackEnd](https://github.com/Abrahamrc94/Mercadonia.git) →  En este repositorio se encuentra el back con toda su documentación 
+
+## Construido con 🛠️
+
+- [Angular](https://angular.io/docs) → El framework web SPA.
+- [Spring](https://spring.io/why-spring) → Framework de desarrollo.
+- [Spring --> Spring-Tools](https://spring.io/tools) → Herramienta para Spring.
+- [Docker](https://www.docker.com/) → Contenedor para la base de datos.
+- [MySQL Workbench](https://www.mysql.com/products/workbench/) → Para el manejo de la base de datos.
+- [Visual Studio Code](https://code.visualstudio.com/) → Editor utilizado.
+
+## Autores ✒️
+
+_Aqui tenemos a todos los participantes en este proyecto:_
+
+* **David Cebrian** - [GitHub](https://github.com/davidcebrian)
+* **Ruben Daza** - [GitHub](https://github.com/rudahee)
+* **Abraham Romero** - [GitHub](https://github.com/Abrahamrc94)

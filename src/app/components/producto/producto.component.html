@@ -18,6 +18,26 @@
     </table>
 </div>
 <hr>
+<div class="container col-8 d-flex flex-column justify-content-center align-items-center">
+    <p><b>Producto obtenido por ID</b></p>
+    <table class="table table-striped" *ngIf="producto">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Precio</th>
+                <th scope="col">Stock</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">{{producto.id}}</th>
+                <td>{{producto.nombre}}</td>
+                <td>{{producto.precio}}</td>
+                <td>{{producto.stock}}</td>
+            </tr>
+    </table>
+</div>
 <div class="d-flex justify-content-center align-items-center flex-column my-2">
         <h2>REGISTRO</h2>
         <form class="row col" [formGroup] = "registerForm">
@@ -39,6 +59,7 @@
             <input type="text" class="form-control" formControlName="stock" id="inputStock" placeholder="Stock">
         </div>
         <div class="d-block w-100"></div>
-        <button type="button" (click)="createProducto()" class="col-2 btn-purple rounded border offset-3" [disabled]="registerForm.invalid">Registrar</button>
+        <button type="button" (click)="createProducto()" class="col-2 rounded border offset-3" [disabled]="registerForm.invalid">Registrar</button>
+        <button type="button" (click)="GetProductById()" class="col-2 rounded border offset-3">Buscar ID</button>
     </form>
 </div>

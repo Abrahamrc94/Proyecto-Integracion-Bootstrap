@@ -12,10 +12,13 @@ export class ProductoComponent implements OnInit {
 
   registerForm: FormGroup;
   productos: any[];
+  producto: any;
 
-  constructor(private dbService: DatabaseService, private build: FormBuilder, private productoService: DatabaseService) { 
+  //Constructor que incializa 
+  constructor( private build: FormBuilder, private productoService: DatabaseService) { 
 
     this.productos = [];
+    //this.producto = Object;
 
     this.registerForm = this.build.group({
       id:['', Validators.required],
@@ -27,9 +30,22 @@ export class ProductoComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.dbService.GetAllProducts().subscribe(res =>{
+    this.productoService.GetAllProducts().subscribe(res =>{
       this.productos = res;
     })
+  }
+
+  GetProductById(): void{
+    this.productoService.GetProductById(this.registerForm.value.id)
+      .subscribe(
+        res=>{
+          this.producto=res;
+        },
+        err => {
+          console.log(err);
+        }
+      )
+    
   }
 
   createProducto(): void{
@@ -39,14 +55,4 @@ export class ProductoComponent implements OnInit {
       console.log(response);
     })
   }
-
-  modificarProducto(): void{
-    let productoCreated: Producto;
-    productoCreated = this.registerForm.value;
-    this.productoService.modificarProducto(this.registerForm.value).subscribe(response => {
-      console.log(response);
-    })
-  }
-
-
 }

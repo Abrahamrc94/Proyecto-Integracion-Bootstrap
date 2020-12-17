@@ -2,7 +2,6 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
-import { map } from 'rxjs/operators';
 
 
 @Injectable({
@@ -16,6 +15,10 @@ export class DatabaseService {
 
   GetAllProducts(): Observable<any> {
     return this.http.get(this.infoEndP);
+  }
+
+  GetProductById(id : number): Observable<any> {
+    return this.http.get(this.infoEndP + `/${id}`)
   }
 
   createProduct(producto: any): Observable<any>{
