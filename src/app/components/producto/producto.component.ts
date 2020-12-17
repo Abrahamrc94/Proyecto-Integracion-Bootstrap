@@ -15,6 +15,8 @@ export class ProductoComponent implements OnInit {
 
   constructor(private dbService: DatabaseService, private build: FormBuilder, private productoService: DatabaseService) { 
 
+    this.productos = [];
+
     this.registerForm = this.build.group({
       id:['', Validators.required],
       nombre: ['', Validators.required],
