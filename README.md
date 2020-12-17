@@ -44,10 +44,6 @@ _El front se compone de un home básico con un slider u varios enlaces, uno a la
 - [MySQL Workbench](https://www.mysql.com/products/workbench/) → Para el manejo de la base de datos.
 - [Visual Studio Code](https://code.visualstudio.com/) → Editor utilizado.
 
-## Autores ✒️
+## Autor ✒️
 
-_Aqui tenemos a todos los participantes en este proyecto:_
-
-* **David Cebrian** - [GitHub](https://github.com/davidcebrian)
-* **Ruben Daza** - [GitHub](https://github.com/rudahee)
 * **Abraham Romero** - [GitHub](https://github.com/Abrahamrc94)
